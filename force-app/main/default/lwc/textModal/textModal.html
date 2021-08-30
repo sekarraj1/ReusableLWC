@@ -1,0 +1,41 @@
+<template>
+    <c-modal
+         hide-header={hideHeader}
+         modal-header={header}
+         hide-cancel-button={hideCancelButton}
+         hide-save-button={hideSaveButton}
+         save-label="Save"
+         closel-label="Done"
+         save-button-variant="brand"
+         close-button-variant="brand-outline"
+         modal-width=60
+         onclose={closeModalHandler}
+         onsave={saveModalHandler}
+         is-overflow-visible
+         page-name={pageName} 
+         page-group={pageGroup}
+     >
+     <div class="slds-align_absolute-center"  if:false={showSuccessMessage}>
+         <span if:false={showErrorMessage}> <lightning-input type="text" name="input" label={inputLabelName}></lightning-input></span>
+        
+     </div>
+         <div if:true={showSuccessMessage} class="slds-p-around_large">
+             <div class="slds-align_absolute-center">
+                 <lightning-icon variant="success" icon-name="utility:success" size="x-small"></lightning-icon>
+                 <span class="c-padding">{firstText}</span>  
+                 <span class="slds-p-horizontal_xx-small c-text-bold">{middleText}</span>
+                 <span>{lastText}</span>
+             </div>
+         </div>
+
+         <div class="slds-align_absolute-center" if:true={showErrorMessage} >
+            <lightning-icon  variant="warning" icon-name="utility:warning" size="x-small"></lightning-icon>
+            <span class="c-padding slds-text-color_error">{firstText}</span>  
+            <span class="slds-p-horizontal_xx-small c-text-bold slds-text-color_error">{middleText}</span>
+            <span class="slds-text-color_error">{lastErrorText}</span>
+        </div>
+       
+       </div>
+       
+     </c-modal>
+ </template>

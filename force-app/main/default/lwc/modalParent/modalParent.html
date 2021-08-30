@@ -1,0 +1,48 @@
+<template>
+    <h1>Parent component</h1>
+
+    <lightning-button variant="brand" label="Open Modal" title="Open Modal" onclick={showModalPopup} class="slds-m-left_x-small"></lightning-button>
+
+  <!-- <c-text-util-modal 
+        show-modal={showModal}
+        onsave={updateValue}
+        onclose={closeModal}
+        save-button-label="Save"
+        done-button-label="Done"
+        input-type="text"
+        card-update-message="Update expiry on card ....2303"
+        card-update-success-message="Expiry date on Visa Credit ....2303 has been updated."
+        input-label="Expiration date">
+    </c-text-util-modal>-->
+
+    <c-text-modal
+        show-modal={showModal}
+        hide-cancel-button={hideCancelButton}
+        hide-save-button={hideSaveButton}
+        save-label="Save"
+        closel-label="Done"
+        save-button-variant="brand"
+        close-button-variant="brand-outline"
+        modal-width=60
+        onclose={closeModalHandler}
+        onsave={saveModalHandler}
+        is-overflow-visible
+    >
+      
+        <div slot="header">
+            <h2 slot="header" id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"  if:false={showSuccessMessage}>{header}</h2>
+        </div>
+        <div class="slds-align_absolute-center">
+            <lightning-input type="text" name="input1" label="Expiration Date" if:false={showSuccessMessage}></lightning-input>
+        </div>
+        <div if:true={showSuccessMessage} class="slds-p-around_large">
+            <div class="slds-align_absolute-center">
+                <lightning-icon variant="success" icon-name="utility:success" size="x-small"></lightning-icon>
+                <span class="padding-left:10px;">{firstText}</span>
+                <span class="slds-p-horizontal_xx-small c-text-bold">{middleText}</span>
+                <span>{lastText}</span>
+            </div>
+        </div>
+    </c-text-modal>
+   
+</template>
