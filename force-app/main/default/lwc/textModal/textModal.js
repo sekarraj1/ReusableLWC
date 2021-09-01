@@ -3,6 +3,7 @@ const ROOTCAUSE="Root Cause : ";
 const DECLINECODE="Decline code :";
 const DESCRIPTION="Description :";
 
+
 export default class TextModal extends LightningElement {
 //Variables to display the values
     @api firstText = "Expiry date on";
