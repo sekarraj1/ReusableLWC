@@ -2,8 +2,7 @@ import { LightningElement, track ,api} from 'lwc';
 const ROOTCAUSE="Root Cause : ";
 const DECLINECODE="Decline code :";
 const DESCRIPTION="Description :";
-
-
+//Added fdfd
 export default class TextModal extends LightningElement {
 //Variables to display the values
     @api firstText = "Expiry date on";
