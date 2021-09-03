@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 828e994bfcff02d5926fc89923f9af919ccae47a
 .verticalAlign {
 	cursor: pointer;
     padding: 0px 5px !important;
@@ -32,4 +36,8 @@
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: rgba(0,0,0,0.4);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 828e994bfcff02d5926fc89923f9af919ccae47a
