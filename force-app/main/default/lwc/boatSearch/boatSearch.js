@@ -1,4 +1,4 @@
- // imports
+// imports
  import { NavigationMixin } from 'lightning/navigation'
 import {LightningElement, track } from 'lwc';
 
@@ -32,4 +32,3 @@ import {LightningElement, track } from 'lwc';
         });
      }
   }
-  
