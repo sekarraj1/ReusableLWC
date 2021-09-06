@@ -2,8 +2,4 @@
 <AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>52.0</apiVersion>
     <description>A Lightning Application Bundle</description>
-<<<<<<< HEAD
 </AuraDefinitionBundle>
-=======
-</AuraDefinitionBundle>
->>>>>>> 828e994bfcff02d5926fc89923f9af919ccae47a
