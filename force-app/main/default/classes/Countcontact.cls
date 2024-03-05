@@ -1,6 +1,6 @@
 public with sharing class Countcontact {
     public static void getContactCounts(List<Contact> newCon,List<Contact> oldCont) {
-        // Get the account id Test
+        // Get the account id Test j
         set<Id> accIds = new set<Id>();
         try{
             if(newCon !=null && newCon.size()>0){
