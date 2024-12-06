@@ -6,9 +6,4 @@
     <aura:attribute name="selectedValue" type="String" default="" description="Selected value in single Select" />
  
     <c:multiSelectCombobox multiSelect="true" options="{!v.options}" selectedValue="{!v.selectedValue}" label="Single Select Combobox"></c:multiSelectCombobox>
-<<<<<<< HEAD
 </aura:application>
-=======
-</aura:application>
- 
->>>>>>> 828e994bfcff02d5926fc89923f9af919ccae47a
